@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2{
+            color: cornflowerblue;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-transform: capitalize;
+            text-align: center;
+            margin: 20px 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-image: linear-gradient(35deg, rgb(79, 74, 74), rgb(44, 40, 40), rgb(90, 85, 85) );
+
+          
+        }
+        .table{
+            width: 90%;
+            height: 100vh;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: gainsboro;
+        }
+        .table>div{
+            width: 100%;
+            height: 10vh;
+            border: 1px solid black;
+            display: flex;
+        }
+        .table>div:nth-child(odd){
+            background-color: yellowgreen;
+        }
+        .table>div:nth-child(even){
+            background-color: steelblue;
+        }
+
+    
+        .table>div>div{
+            width: 10%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            transition: .4s;
+        }
+        .table>div>div:nth-child(odd){
+            background-color: skyblue;
+        }
+
+        .table>div>div:hover{
+            background-color: bisque;
+            color: black;
+            transform: scale(1.2);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h2>multiplication table</h2>
+    <section class="table">
+       <div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+       </div>
+       <div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+       </div>
+       <div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+       </div>
+       <div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+       </div>
+       <div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+       </div>
+       <div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+       </div>
+       <div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+       </div>
+       <div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+       </div>
+       <div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+       </div>
+       <div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+        <div>0</div>
+       </div>
+    </section>
+</body>
+<script>
+    for(i=1; i<=10; i++){
+        for(d=1; d<=10; d++){
+            document.querySelector('.table>div:nth-of-type('+i+')>div:nth-of-type('+d+')').innerHTML=i*d
+        }
+    }
+</script>
+</html>
